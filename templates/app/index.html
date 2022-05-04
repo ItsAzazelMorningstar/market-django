@@ -1,4 +1,23 @@
-{% include "app/base.html" %}
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}YARRAK{% endblock title %}
+{% block head %}
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<title>CSS3 ile E-Ticaret Web Öğesi Oluşturma - Demo</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/block.css' %}">
+<style type="text/css">
+    body {
+        background: #eff0eb;
+}
+    .block {
+        
+    }
+</style>
+<meta name="robots" content="noindex,follow" />
+{% endblock head %}
 {% block body %}
-body
+{% include "app/card.html" %}
+{% include "app/card.html" %}
+{% include "app/card.html" %}
 {% endblock body %}
