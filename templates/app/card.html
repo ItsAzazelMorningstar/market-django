@@ -1,0 +1,30 @@
+{% load static %}
+<div class="block" style="top:25px left:150px">
+	<div class="urun">
+		<img src="{% static 'resim/urun.jpg' %}">
+			<div class="buton">
+			<a class="satin-al" href="#">Sepete Ekle</a>
+			<a class="on-izleme" href="#">Ürünü İncele</a>
+		</div>
+	</div>
+
+	<div class="bilgi">
+		<h4>BŞ Emlak WordPress Emlak Teması<br /> # 5 Farklı Renk Seçeneği # 100% Valid</h4>
+		<span class="aciklama">
+			BŞ Emlak Teması Özellikleri Temanın kodlama yapısında hiçbir hata yoktur, 100% Valid kodlama, Google’dan 92 SEO puanı almıştır, Google Chrome, Yandex ve Mozilla ile uyumlu, SEO uyumlu kodlama...
+		</span>
+		<span class="fiyat">{% block fiyat %}31.69{% endblock fiyat %}</span>
+		<a class="satin-al_s" href="#">Satın Al</a>
+	</div>
+
+	<div class="detaylar">
+		<span class="zaman">12 dakika önce</span>
+		<ul class="oylama">
+			<li class="oylandi"></li>
+			<li class="oylandi"></li>
+			<li class="oylandi"></li>
+			<li class="oylandi"></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
